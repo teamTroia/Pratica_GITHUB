@@ -1,1 +1,26 @@
+#include <iostream>
+using namespace std;
 
+int main(){
+    int troca;
+    int crescente[3];
+    for(int i=0; i<3;i++)
+    cin>>crescente[i];
+
+for(int j=0; j<3;j++)
+{
+    for(int i=j;i<3;i++)
+    {
+        if(crescente[j]<crescente[i])
+        {
+        troca=crescente[j];
+        crescente[j]=crescente[i+1];
+        crescente[i+1]=troca;
+        }
+    }
+}
+     for(int i=0;i<3;i++)
+     cout<<crescente[i]<<" ";
+
+    return 0;
+}
