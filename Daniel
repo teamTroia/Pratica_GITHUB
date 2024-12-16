@@ -1,1 +1,48 @@
+#include <iostream>
 
+using namespace std;
+int main(){
+    int n1,n2,n3,maior,menor,meio;
+    cout<<"digite n1: "<<endl;
+    cin>>n1;
+    cout<<"digite n2: "<<endl;
+    cin>>n2;
+    cout<<"digite n3: "<<endl;
+    cin>>n3;
+
+    if ((n1>n2)and(n1>n3)){
+        maior=n1;
+        if(n2>n3){
+            meio=n2;
+            menor=n3;
+        
+        }
+        else{meio=n3;
+        menor=n2;}
+    }
+    else if ((n2>n1)and(n2>n3)){
+        maior = n2;
+        if(n1>n3){
+            meio=n1;
+            menor=n3;
+            
+        }
+        else {meio=n3;
+        menor=n1;}
+    }
+    else if((n3>n1)and(n3>n2)){
+        maior=n3;
+        if (n2>n1){
+            meio=n2;
+            menor=n1;
+            
+        }else {menor=n2;
+            meio=n1;}
+        
+        
+    }
+    cout<<"o numero menor e: "<< menor<<endl<<"o numero do meio e: "<<meio<<endl<<"o numero maior e: "<<maior<<endl;
+    
+    return 0;
+
+}
