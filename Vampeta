@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int x, y, z;
+    cin >> x >> y >> z;
+    if (x < y and x < z){
+        if (y < z){
+            cout << x << " " << y << " " << z;
+        }
+        else if (z < y){
+            cout << x << " " << z << " " << y;
+        }
+    }
+    if (y < x and y < z){
+        if (x < z){
+            cout << y << " " << x << " " << z;
+        }
+        else if (z < x){
+            cout << y << " " << z << " " << x;
+        }
+    }
+    if (z < x and z < y){
+        if (y < x){
+            cout << z << " " << y << " " << x;
+        }
+        else if (x < y){
+            cout << z << " " << x << " " << y;
+        }
+    }
+    return 0;
+}
